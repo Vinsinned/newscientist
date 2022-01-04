@@ -212,6 +212,7 @@ table {
     margin: 0 0 0 .34375rem;
 }
 .articleReference {
+    color: #4d4d4d;
     margin: 0 0 .6875rem;
 }
 .referenceBold {
@@ -227,4 +228,39 @@ table {
     font-family: "PT Serif", Georgia, serif;
     font-style: italic;
     margin: 0 0 .6875rem;
+}
+.moreTopics {
+    display: flex;
+    align-items: baseline;
+    display: flex;
+    padding: 1.375rem 0 0;
+    width: 100%;
+}
+.moreTopicsPara {
+    color: #4d4d4d;
+    font-weight: 700;
+    margin: 0 .6875rem 0 0;
+}
+.topicButtons {
+    margin: 0 0 .6875rem;
+    width: 9.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.topicButton {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1875rem;
+    background: #005587;
+    padding: .45833rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .188rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.topicButton:hover {
+    background-color: #288eb7;
 }
