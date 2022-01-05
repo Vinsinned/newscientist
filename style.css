@@ -418,3 +418,180 @@ table {
 }
 
 /* website footer */
+.footerWrapper {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    display: inline-block;
+    margin: 3.57495rem 0 0;
+    padding: 1.375rem 0;
+    width: 100%;
+}
+.footerContents {
+    width: 95%;
+    margin: auto;
+}
+.footerNewsletter {
+    margin-bottom: .6875rem;
+    padding: .6875rem 0;
+}
+.signUpForm {
+    padding-top: 1.375rem;
+}
+.newsletterHeader {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.6875rem;
+    margin: 0 0 .93747rem;
+}
+.emailLabel {
+    font-family: 'PT Serif', Georgia, serif;
+    margin: 0 .6875rem .6875rem 0;
+    display: inline-block;
+    color: #4d4d4d;
+}
+.newsletterEmail {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    border-radius: 0;
+    font-family: 'PT Serif', Georgia, serif;
+    font-size: 1rem;
+    height: auto;
+    line-height: 1rem;
+    padding-left: .1875rem;
+    margin: 0 .6875rem .6875rem 0;
+}
+.newsletterSubmit {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    width: 15rem;
+    background: #005587;
+    border: none;
+    border-radius: .188rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1rem;
+    padding: .45833rem;
+    transition: 0.2s;
+}
+/* footer links */
+.footerNav {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: .6875rem;
+}
+.firstFooterNav {
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: .6875rem;
+}
+.footerNavLink {
+    font-family: 'PT Serif', Georgia, serif;
+    border-right: 1px solid #4d4d4d;
+    display: inline-block;
+    margin: 0 .6875rem 0 0;
+    padding: 0 .6875rem 0 0;
+}
+.lastLink {
+    border-right: none;
+}
+.cookieSettings {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    margin-top: 1.375rem;
+    background: #005587;
+    border: none;
+    border-radius: .188rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: .3rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+/* get app and follow us */
+.appFollow {
+    text-align: center;
+    margin-bottom: .6875rem;
+    padding: .6875rem 0;
+    display: flex;
+    justify-content: center;
+}
+.appFollowHeader {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1875rem;
+    text-align: left;
+    margin: 0 0 .93747rem;
+    text-transform: uppercase;
+    letter-spacing: -.0375rem;
+    font-weight: 500;
+}
+.getApp {
+    padding: 1.375rem 0;
+}
+.followUs {
+    padding: 1.375rem 0;
+}
+.buttons {
+    display: flex;
+}
+.appleButton {
+    width: 6.780625rem;
+    height: 2.008125rem;
+    margin-right: 1.4rem;
+}
+.googleButton {
+    width: 6.87375rem;
+    height: 2.028125rem;
+    margin-right: 0.25rem;
+}
+.followOptions {
+    display: flex;
+    align-items: center;
+    margin: 0 0 .6875rem;
+}
+.followOptionsImage {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: .91667rem;
+    transition: 0.1s;
+}
+/* footer additional */
+.footerCopyright {
+    font-family: 'PT Serif', Georgia, serif;
+    display: inline-block;
+    font-size: .875rem;
+    line-height: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.backToTop {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 1.375rem auto;
+    width: 9rem;
+}
+.backToTopLink {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+}
+.upCircle {
+    font-size: 2.94rem !important;
+}
