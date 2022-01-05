@@ -132,7 +132,7 @@ table {
 }
 .option {
     width: 30px;
-    margin-right: .91667rem;
+    margin-right: .71667rem;
     border-radius: 9999px;
 }
 .redditShare {
@@ -203,7 +203,6 @@ table {
     display: inline-block;
     margin: 1.375rem 0;
     padding: .6875rem;
-    width: 100%;
 }
 .relatedStory {
     font-size: 1rem;
@@ -318,3 +317,104 @@ table {
     font-weight: 700;
     line-height: 2.1875rem;
 }
+
+/* shareOptions and issue */
+.shareIssue {
+    margin: 0 0 1.375rem;
+    padding-top: 3.5rem;
+    width: 100%;
+}
+.shareOptionsFooter {
+    margin-bottom: 1.975rem;
+}
+.issuePromotion {
+    display: flex;
+    flex: 0 0 auto;
+}
+.issueImage {
+    padding-right: 0.8rem;
+}
+.issueLink {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    border: none;
+    display: inline-block;
+    line-height: 1rem;
+    padding: .45833rem;
+    transition: 0.2s;
+    text-transform: uppercase;
+    line-height: 1rem;
+    font-size: 1rem;
+    margin: 0 0 .6875rem;
+    border-radius: 4px;
+}
+.subscribeLink {
+    background: #00b3e5;
+}
+.viewLink {
+    background: #20b2aa;
+}
+.buyLink {
+    background: red;
+}
+
+/* moreNews */
+.scientistStory {
+    margin-bottom: 1.375rem;
+}
+.moreNewsHeader {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    width: 100%;
+    margin: 0 0 .93747rem;
+    margin-top: 5rem;
+}
+.moreNewsImageDiv {
+    position: relative;
+}
+.moreNewsImage {
+    /*change width for media query*/
+    width: 100%;
+    margin-bottom: .6875rem;
+    overflow: hidden;
+    pointer-events: none;
+    position: relative;
+    transition: 0.2s;
+}
+.storyGenre {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    background-color: #484848;
+    padding: .45833rem;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    left: 0;
+}
+.storyGenreLink {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    text-transform: uppercase;
+}
+.cardHeading {
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -.0375rem;
+    pointer-events: none;
+    transition: 0.2s;
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+}
+.humanGenre {
+    background-color: #79227d;
+}
+.healthGenre {
+    background-color: #20bc9e;
+}
+
+/* website footer */
