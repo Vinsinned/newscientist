@@ -49,21 +49,42 @@ table {
 }
 
 /* Main Stuff */
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+.shareIcon {
+    transition: 0.1s;
+}
+.shareIcon:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+html {
+  box-sizing: border-box;
+}
 
 /* Navbar */
 .navbar {
-    background: #fff;
-    clear: both;
     margin: 0 0 1.375rem;
-    padding-top: .6875rem;
     position: relative;
-    width: 100%;
-    z-index: 998;
     text-align: center;
+    margin-top: .4.6875rem;
 }
 .flexNav {
     display: flex;
     justify-content: center;
+    z-index: 998;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    padding-top: .6875rem;
+    height: 2rem;
 }
 .logo {
     height: 1.4rem;
@@ -76,18 +97,20 @@ table {
     font-weight: 400 !important;
     stroke: black;
     stroke-width: 10;
+    cursor: pointer;
 }
 .navRight {
     position: absolute;
     right: .6875rem;
     top: .5375rem;
     z-index: 550;
+    cursor: pointer;
 }
 .navRight * {
     font-size: 30px !important;
 }
 .subscribeButton {
-    margin-top: .6875rem;
+    margin-top: 2.5875rem;
     padding: .6875rem 0;
     text-align: center;
 }
@@ -145,12 +168,17 @@ table {
     width: 34px;
 }
 .storyInformation {
-    margin: 0 0 .6875rem;
+    margin: 0 0 .8875rem;
 }
 .articleCategory {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    color: #484848;
+}
+.articleCategory:hover {
+    text-decoration: underline;
+    color: #484848;
 }
 .articleDate {
     color: #4d4d4d;
@@ -168,7 +196,7 @@ table {
     color: #4d4d4d;
 }
 .authorName {
-    color: #00b3e5;
+    color: #00b3e5 !important;
     font-weight: 700;
 }
 .articleImage {
@@ -203,6 +231,7 @@ table {
     display: inline-block;
     margin: 1.375rem 0;
     padding: .6875rem;
+    width: calc(100% - 1.5625rem);
 }
 .relatedStory {
     font-size: 1rem;
@@ -211,15 +240,15 @@ table {
     margin: 0 0 0 .34375rem;
 }
 .articleReference {
+    font-family: "PT Serif", Georgia, serif;
     color: #4d4d4d;
-    margin: 0 0 .6875rem;
+    margin: 0 0 .8875rem;
 }
 .referenceBold {
     font-weight: 700;
 }
 .referenceItalic {
     color: #4d4d4d;
-    font-family: "PT Serif", Georgia, serif;
     font-style: italic;
 }
 .launchpadAd {
@@ -227,6 +256,7 @@ table {
     font-family: "PT Serif", Georgia, serif;
     font-style: italic;
     margin: 0 0 .6875rem;
+    line-height: 1.4625rem;
 }
 .moreTopics {
     display: flex;
@@ -264,6 +294,9 @@ table {
 .topicButton:hover {
     background-color: #288eb7;
 }
+.contentLink {
+    color: #00b3e5 !important;
+}
 
 /* Grid */
 .moreArticle {
@@ -289,7 +322,14 @@ table {
 .filter:last-child {
     border: none;
 }
+.filter:hover {
+    background-color: #ddd;
+}
 .currentFilter {
+    background-color: #00b3e5;
+    color: #fff;
+}
+.currentFilter:hover {
     background-color: #00b3e5;
     color: #fff;
 }
@@ -309,6 +349,9 @@ table {
     font-weight: 700;
     letter-spacing: -.0375rem;
     line-height: 25px;
+}
+.storyName:hover {
+    color: #00b3e5;
 }
 .storyRank {
     align-self: center;
@@ -363,6 +406,8 @@ table {
 /* moreNews */
 .scientistStory {
     margin-bottom: 1.375rem;
+    overflow: hidden;
+    object-fit: contain;
 }
 .moreNewsHeader {
     font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
@@ -375,15 +420,10 @@ table {
 }
 .moreNewsImageDiv {
     position: relative;
-}
-.moreNewsImage {
-    /*change width for media query*/
-    width: 100%;
-    margin-bottom: .6875rem;
+    display: inline-block;
     overflow: hidden;
-    pointer-events: none;
-    position: relative;
-    transition: 0.2s;
+    display: flex;
+    margin-bottom: .6875rem;
 }
 .storyGenre {
     font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
@@ -415,6 +455,25 @@ table {
 }
 .healthGenre {
     background-color: #20bc9e;
+}
+.moreNewsImage {
+    /*change width for media query*/
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all .2s;
+}
+.scientistStory:hover {
+    cursor: pointer;
+    transition: 0.2s;
+}
+.scientistStory:hover .moreHeading {
+    color: #00b3e5;
+    transition: 0.1s;
+}
+.scientistStory:hover .moreNewsImage {
+    transform: scale(1.03);
+    opacity: 0.9;
 }
 
 /* website footer */
@@ -480,6 +539,9 @@ table {
     padding: .45833rem;
     transition: 0.2s;
 }
+.newsletterSubmit:hover {
+    background: #193c5b;
+}
 /* footer links */
 .footerNav {
     width: 100%;
@@ -497,6 +559,9 @@ table {
     display: inline-block;
     margin: 0 .6875rem 0 0;
     padding: 0 .6875rem 0 0;
+}
+.footerNavLink:hover {
+    color: #00b3e5;
 }
 .lastLink {
     border-right: none;
@@ -516,6 +581,9 @@ table {
     text-align: center;
     text-transform: uppercase;
     transition: 0.2s;
+}
+.cookieSettings:hover {
+    background-color: #288eb7;
 }
 /* get app and follow us */
 .appFollow {
@@ -582,6 +650,7 @@ table {
 .backToTop {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     font-weight: 600;
     line-height: 40px;
     margin: 1.375rem auto;
@@ -594,4 +663,62 @@ table {
 }
 .upCircle {
     font-size: 2.94rem !important;
+}
+.optionFooter {
+        height: 32px;
+        width: 32px;
+        margin-right: .91667rem;
+        border-radius: 9999px;
+    }
+
+@media (min-width:689px) {
+    .shareIssue {
+        display: flex;
+        margin: 0 0 1.375rem;
+    }
+    .issuePromotion {
+        width: 50%;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+    }
+    .redditShare {
+        width: 34px;
+    }
+    .issueImage {
+        width: 9.748125rem;
+    }
+    .issueLinks {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .moreNews {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .scientistStory {
+        flex: 1 0 23.5%;
+        margin-right: 2%;
+        max-width: 23.5%;
+        width: 23.5%;
+    }
+    .scientistStory:last-child {
+        margin: 0;
+    }
+    .cardHeading {
+        line-height: 1.5625rem;
+        font-size: 1.375rem;
+    }
+    .footerCopyright {
+        margin: 0;
+    }
+    .backToTop {
+        text-align: center;
+    }
+    .getApp {
+        display: inline-block;
+        margin-right: 1.87495rem;
+        vertical-align: top;
+    }
 }
